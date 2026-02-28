@@ -38,7 +38,7 @@ WeClone/
 ├── liyunlong_lora_output/    # (被 Git 忽略) 本地模型微调权重输出
 └── launcher.py               # 项目快捷启动入口
 
-🚀 快速开始
+## 🚀 快速开始
 1. 环境准备
 建议使用 Conda 创建独立的 Python 虚拟环境：
 
