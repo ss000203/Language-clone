@@ -37,6 +37,7 @@ WeClone/
 ├── weclone-audio/            # 语音克隆模块 (SparkTTS / Llasa)
 ├── liyunlong_lora_output/    # (被 Git 忽略) 本地模型微调权重输出
 └── launcher.py               # 项目快捷启动入口
+```
 
 ## 🚀 快速开始
 1. 环境准备
