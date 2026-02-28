@@ -43,27 +43,30 @@ WeClone/
 1. 环境准备
 建议使用 Conda 创建独立的 Python 虚拟环境：
 
-Bash
+```
 conda create -n weclone python=3.10
 conda activate weclone
 pip install -r pyproject.toml # 或按照你的依赖管理方式安装
+```
 2. 数据处理
 将导出的聊天记录放入对应目录，执行数据清洗与转换：
 
-Bash
-# 具体运行命令可根据你的 cli.py 设计补充
+```
 python launcher.py data_process --config examples/mllm.template.jsonc
+```
 3. 模型微调
 基于清洗好的数据集启动 LoRA 微调：
 
-Bash
+```
 python launcher.py train --model qwen2.5-7b --dataset data/real.json
+```
 4. 启动 Web 交互界面
 训练完成后，启动图形化界面与你的“数字分身”对话：
 
-Bash
+```
 python -m weclone.eval.web_demo
-⚠️ 声明与免责条款
+```
+## ⚠️ 声明与免责条款
 本项目主要用于学术研究（毕业设计）与技术交流，请勿将生成的内容用于任何非法、侵权或欺诈用途。
 
 涉及真实用户数据时，请务必先运行项目中的 PII 脱敏模块。
